@@ -1,4 +1,4 @@
-package br.com.traveler
+package br.com.traveler.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,8 +10,10 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import br.com.traveler.Classes.OnboardingItem
+import br.com.traveler.Adapters.OnboardingItemsAdapter
+import br.com.traveler.R
 import com.google.android.material.button.MaterialButton
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -79,6 +81,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToLoginActivity() {
         startActivity(Intent(applicationContext, LoginActivity::class.java))
+        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
         finish()
     }
 
