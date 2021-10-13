@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Traveler</string>
+    <string name="get_started_button">Comece agora!</string>
+    <string name="skip_text">Pular</string>
+</resources>
