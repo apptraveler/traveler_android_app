@@ -12,4 +12,8 @@ class RetroFitInitializer {
     fun serviceTraveler() : ServiceTraveler {
         return retrofit.create(ServiceTraveler::class.java)
     }
+
+    fun serviceDestination() : ServiceDestination {
+        return retrofit.create(ServiceDestination::class.java)
+    }
 }
