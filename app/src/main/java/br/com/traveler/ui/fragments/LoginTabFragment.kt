@@ -8,10 +8,15 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import br.com.traveler.R
+import br.com.traveler.models.User
+import br.com.traveler.services.RetroFitInitializer
 import br.com.traveler.ui.activities.ForgotPasswordActivity
+import retrofit2.Call
+import retrofit2.Response
 
 class LoginTabFragment : Fragment() {
     override fun onCreateView(
@@ -59,7 +64,29 @@ class LoginTabFragment : Fragment() {
             navigateToForgotPasswordActivity()
         }
 
+        view.findViewById<AppCompatButton>(R.id.login_button).setOnClickListener {
+            signIn()
+        }
+
         return view
+    }
+
+    private fun signIn() {
+        val s = RetroFitInitializer().serviceTraveler()
+        val call = s.signIn()
+
+        call.enqueue(object : retrofit2.Callback<User> {
+
+            override fun onResponse(call: Call<User>, response: Response<User>) {
+                if (!response.isSuccessful) return
+
+                Toast.makeText(activity, "Login realizado com sucesso", Toast.LENGTH_LONG).show()
+            }
+
+            override fun onFailure(call: Call<User>, t: Throwable) {
+                Toast.makeText(activity, "Ocorreu um erro ao realizar o login", Toast.LENGTH_LONG).show()
+            }
+        })
     }
 
     private fun navigateToForgotPasswordActivity() {
