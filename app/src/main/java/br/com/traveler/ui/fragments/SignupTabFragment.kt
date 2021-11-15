@@ -1,4 +1,4 @@
-package br.com.traveler.Fragments
+package br.com.traveler.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

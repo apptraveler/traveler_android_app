@@ -1,10 +1,9 @@
-package br.com.traveler.Activities
+package br.com.traveler.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.viewpager.widget.ViewPager
-import br.com.traveler.Adapters.LoginAdapter
+import br.com.traveler.ui.adapters.LoginAdapter
 import br.com.traveler.R
 import com.google.android.material.tabs.TabLayout
 

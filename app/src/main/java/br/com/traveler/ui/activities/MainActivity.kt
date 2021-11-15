@@ -1,4 +1,4 @@
-package br.com.traveler.Activities
+package br.com.traveler.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,8 +10,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import br.com.traveler.Classes.OnboardingItem
-import br.com.traveler.Adapters.OnboardingItemsAdapter
+import br.com.traveler.models.OnboardingItem
+import br.com.traveler.ui.adapters.OnboardingItemsAdapter
 import br.com.traveler.R
 import com.google.android.material.button.MaterialButton
 

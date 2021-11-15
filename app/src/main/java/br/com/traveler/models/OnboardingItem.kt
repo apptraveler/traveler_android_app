@@ -1,4 +1,4 @@
-package br.com.traveler.Classes
+package br.com.traveler.models
 
 data class OnboardingItem(
     val onboardingImage: Int,

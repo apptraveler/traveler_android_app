@@ -1,11 +1,11 @@
-package br.com.traveler.Adapters
+package br.com.traveler.ui.adapters
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import br.com.traveler.Fragments.LoginTabFragment
-import br.com.traveler.Fragments.SignupTabFragment
+import br.com.traveler.ui.fragments.LoginTabFragment
+import br.com.traveler.ui.fragments.SignupTabFragment
 
 class LoginAdapter(fm: FragmentManager?, private val context: Context, var totalTabs: Int) :
     FragmentPagerAdapter(fm!!) {

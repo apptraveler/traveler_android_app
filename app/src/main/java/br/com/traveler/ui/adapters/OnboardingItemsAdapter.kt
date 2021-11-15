@@ -1,4 +1,4 @@
-package br.com.traveler.Adapters
+package br.com.traveler.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import br.com.traveler.Classes.OnboardingItem
+import br.com.traveler.models.OnboardingItem
 import br.com.traveler.R
 
 class OnboardingItemsAdapter(private val onboardingItems: List<OnboardingItem>) :

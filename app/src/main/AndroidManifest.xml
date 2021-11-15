@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Traveler">
         <activity
-            android:name=".Activities.LoginActivity"
+            android:name=".ui.activities.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".Activities.MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
