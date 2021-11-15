@@ -2,4 +2,11 @@
     <string name="app_name">Traveler</string>
     <string name="get_started_button">Comece agora!</string>
     <string name="skip_text">Pular</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_email">E-mail</string>
+    <string name="text_forgotPass">Esqueci minha senha</string>
+    <string name="text_login_button">Login</string>
+    <string name="text_signup_button">REGISTRAR</string>
+    <string name="text_confirm_password">Confirme sua senha</string>
+    <string name="login_welcome_message">Bem vindo ao Traveler</string>
 </resources>
