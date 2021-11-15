@@ -78,9 +78,9 @@ class LoginTabFragment : Fragment() {
         call.enqueue(object : retrofit2.Callback<User> {
 
             override fun onResponse(call: Call<User>, response: Response<User>) {
-                if (response.code() == 200) {
-                    Toast.makeText(activity, "Login realizado com sucesso", Toast.LENGTH_LONG).show()
-                }
+                if (!response.isSuccessful) return
+
+                Toast.makeText(activity, "Login realizado com sucesso", Toast.LENGTH_LONG).show()
             }
 
             override fun onFailure(call: Call<User>, t: Throwable) {

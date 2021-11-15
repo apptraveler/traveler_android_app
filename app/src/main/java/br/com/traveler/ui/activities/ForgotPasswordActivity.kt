@@ -10,31 +10,36 @@ import android.text.TextUtils
 import android.util.Patterns
 
 
-class ForgotPasswordActivity: AppCompatActivity() {
+class ForgotPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recoverPassword()
-    }
-
-    fun isValidEmail(target: CharSequence?): Boolean {
-        return !TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches()
-    }
-
-    fun recoverPassword() {
         val recoverButton = findViewById<AppCompatButton>(R.id.recover_password_button)
         recoverButton.setOnClickListener {
-            val emailEditText = findViewById<EditText>(R.id.forgot_email).text.toString().trim()
-            val isValidEmail = isValidEmail(emailEditText)
-            val toastSuccess = Toast.makeText(this, "E-mail de recuperação enviado", Toast.LENGTH_LONG)
-            val toastRequired = Toast.makeText(this, "O campo E-mail está inválido ou em branco", Toast.LENGTH_LONG)
-            if(isValidEmail) {
-                toastSuccess.show()
-            } else {
-                toastRequired.show()
-            }
+            recoverPassword()
         }
+    }
+
+    private fun isValidEmail(target: CharSequence?): Boolean {
+        target.let { return !TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(it).matches() }
+    }
+
+    private fun recoverPassword() {
+
+        val emailEditText = findViewById<EditText>(R.id.forgot_email).text.toString().trim()
+        val isValidEmail = isValidEmail(emailEditText)
+
+        val toastSuccess = Toast.makeText(this, "E-mail de recuperação enviado", Toast.LENGTH_LONG)
+        val toastRequired = Toast.makeText(this, "O campo E-mail está inválido ou em branco", Toast.LENGTH_LONG)
+
+        if (isValidEmail) {
+            toastSuccess.show()
+        } else {
+            toastRequired.show()
+        }
+
+
     }
 }
