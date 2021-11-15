@@ -11,6 +11,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_navigator.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_right.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_travelers.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_undraw_journey_lwlj.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/icon_background.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/icon_outer_background.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/indicator_active_background.xml" value="0.22135416666666666" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/vie_bg.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/view_page_background.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/view_pager_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/activity_forgot_password.xml" value="0.5" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/login_tab_fragment.xml" value="0.36666666666666664" />
@@ -26,7 +28,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

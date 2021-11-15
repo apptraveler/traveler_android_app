@@ -9,4 +9,7 @@
     <string name="text_signup_button">REGISTRAR</string>
     <string name="text_confirm_password">Confirme sua senha</string>
     <string name="login_welcome_message">Bem vindo ao Traveler</string>
+    <string name="text_forgot_password">Esqueci minha senha</string>
+    <string name="forgot_password_description">Esqueceu sua senha? Não se preocupe viajante! Te ajudaremos nesse formulário, apenas informe seu e-mail e te ajudaremos com isso.</string>
+    <string name="recuperar_senha">Recuperar senha</string>
 </resources>
