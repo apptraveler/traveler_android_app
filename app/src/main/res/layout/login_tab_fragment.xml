@@ -6,9 +6,11 @@
 
     <EditText
         android:id="@+id/email"
+        android:inputType="textEmailAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/hint_email"
+        android:autofillHints="emailAddress"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
@@ -26,6 +28,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
@@ -44,7 +48,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent=".8"
-        app:layout_constraintVertical_bias=".75"
+        app:layout_constraintVertical_bias=".8"
         android:text="@string/text_login_button"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -57,6 +61,7 @@
 
     <TextView
         android:id="@+id/forgot_password_button"
+        android:focusable="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_forgotPass"
@@ -67,7 +72,19 @@
         app:layout_constraintEnd_toEndOf="@+id/password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        android:textColor="@color/custom_color_text_primary"
+        android:textColor="@color/custom_color_primary"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/login_background_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_undraw_floating_re_xtcj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:translationZ="-1dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

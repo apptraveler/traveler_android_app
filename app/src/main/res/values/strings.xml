@@ -14,4 +14,7 @@
     <string name="destination_template">%s, %s</string>
     <string name="welcome_traveler">Olá viajante,\nqual destino você deseja visitar</string>
     <string name="destinies_title">Destinos</string>
+    <string name="text_forgot_password">Esqueci minha senha</string>
+    <string name="forgot_password_description">Esqueceu sua senha? Não se preocupe viajante! Te ajudaremos nesse formulário, apenas informe seu e-mail e te ajudaremos com isso.</string>
+    <string name="recuperar_senha">Recuperar senha</string>
 </resources>
