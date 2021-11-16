@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Traveler">
         <activity
+            android:name=".ui.activities.HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activities.ForgotPasswordActivity"
             android:exported="true"
             android:parentActivityName=".ui.activities.MainActivity"/>

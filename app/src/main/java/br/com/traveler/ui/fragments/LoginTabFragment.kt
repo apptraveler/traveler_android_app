@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import br.com.traveler.R
 import br.com.traveler.models.User
-import br.com.traveler.services.RetroFitInitializer
+import br.com.traveler.services.RetrofitInitializer
 import br.com.traveler.ui.activities.ForgotPasswordActivity
 import retrofit2.Call
 import retrofit2.Response
@@ -72,7 +72,7 @@ class LoginTabFragment : Fragment() {
     }
 
     private fun signIn() {
-        val s = RetroFitInitializer().serviceTraveler()
+        val s = RetrofitInitializer().getAuthorizationService()
         val call = s.signIn()
 
         call.enqueue(object : retrofit2.Callback<User> {

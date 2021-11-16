@@ -15,4 +15,7 @@
     <color name="custom_color_text_primary">#2c448c</color>
     <color name="custom_color_text_secondary">#4a5c94</color>
     <color name="custom_color_background">#FFFFFF</color>
+    <color name="grey">#F4F4F4</color>
+    <color name="grey2">#8194A4</color>
+    <color name="grey3">#C8C5C5</color>
 </resources>
