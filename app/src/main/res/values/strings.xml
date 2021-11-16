@@ -12,4 +12,6 @@
     <string name="destination_tags">História, Museus, Arquitetura</string>
     <string name="destination">Paris, França</string>
     <string name="destination_template">%s, %s</string>
+    <string name="welcome_traveler">Olá viajante,\nqual destino você deseja visitar</string>
+    <string name="destinies_title">Destinos</string>
 </resources>

@@ -7,10 +7,46 @@
     android:padding="10dp"
     tools:context=".ui.activities.HomeActivity">
 
+    <TextView
+        android:id="@+id/destinyWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/welcome_traveler"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinyWelcome"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/beveled_container"
+        android:iconifiedByDefault="false"
+        android:queryHint="Digite seu destino"
+        android:windowSoftInputMode="stateHidden" />
+
+    <TextView
+        android:id="@+id/destinyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/destinies_title"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/destinations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/destinyTitle"
+        android:overScrollMode="never"
         tools:listitem="@layout/destination_item" />
 
 </RelativeLayout>
