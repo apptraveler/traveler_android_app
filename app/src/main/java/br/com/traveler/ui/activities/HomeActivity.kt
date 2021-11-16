@@ -26,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun getDestinations() {
-        val destinationService = RetrofitInitializer().getDestinationService()
+        val destinationService = RetrofitInitializer().getDestinationsService()
         val call = destinationService.getDestinations()
 
         call.enqueue(object : Callback<List<Destination>> {
