@@ -3,26 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/button_bg.xml" value="0.3828125" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/edit_text_bg.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_dashboard.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_navigator.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_right.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/ic_travelers.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/icon_background.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/icon_outer_background.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/indicator_active_background.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/vie_bg.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/view_page_background.xml" value="0.3828125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/drawable/view_pager_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/login_tab_fragment.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/onboarding_item.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/Traveler/app/src/main/res/layout/signup_tab_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/beveled_container.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/beveled_vertical_divider.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/circle.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/dolar_icon.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/dollar_icon.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/heavy_hail.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/rounded_button.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/drawable/sunny_weather.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/layout/activity_home.xml" value="0.5" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/layout/activity_main.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/layout/destination_item.xml" value="0.5" />
+        <entry key="..\:/Users/Gabriel Guedes/Desktop/traveler_android_app/app/src/main/res/layout/place_item.xml" value="0.203125" />
       </map>
     </option>
   </component>

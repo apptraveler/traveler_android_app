@@ -9,4 +9,7 @@
     <string name="text_signup_button">REGISTRAR</string>
     <string name="text_confirm_password">Confirme sua senha</string>
     <string name="login_welcome_message">Bem vindo ao Traveler</string>
+    <string name="destination_tags">História, Museus, Arquitetura</string>
+    <string name="destination">Paris, França</string>
+    <string name="destination_template">%s, %s</string>
 </resources>
