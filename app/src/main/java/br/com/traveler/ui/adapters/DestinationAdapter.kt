@@ -1,9 +1,12 @@
 package br.com.traveler.ui.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -12,8 +15,12 @@ import br.com.traveler.models.Destination
 import br.com.traveler.utils.enumerators.WeatherEnumerator
 import coil.load
 import coil.transform.RoundedCornersTransformation
+import java.util.*
+import kotlin.collections.ArrayList
 
-class DestinationAdapter(private val context: Context, private val destinations: List<Destination>) : RecyclerView.Adapter<DestinationAdapter.DestinationHolder>() {
+class DestinationAdapter(private val context: Context, private val destinations: List<Destination>) : RecyclerView.Adapter<DestinationAdapter.DestinationHolder>(), Filterable {
+
+    val destinationsBackup = ArrayList<Destination>()
 
     class DestinationHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         fun bind(destination: Destination) {
@@ -84,6 +91,49 @@ class DestinationAdapter(private val context: Context, private val destinations:
                 }
             }
         }
+
+    }
+
+    class FilterDestinations(private val destinationAdapter: DestinationAdapter, private val destinations: ArrayList<Destination>) : Filter() {
+
+        override fun performFiltering(p0: CharSequence?): FilterResults {
+
+            val results = FilterResults()
+            val filteredResults = ArrayList<Destination>()
+
+            if (p0.isNullOrEmpty()) {
+                filteredResults.addAll(destinationAdapter.destinationsBackup)
+                results.values = filteredResults
+                return results
+            }
+
+            val searchTerm = p0.toString().lowercase(Locale.getDefault()).trim()
+
+            for (destination in destinationAdapter.destinationsBackup) {
+                if (!destination.country.startsWith(searchTerm, true) &&
+                    !destination.destination.startsWith(searchTerm, true) &&
+                    !destination.tags.any { it.startsWith(searchTerm, true) }
+                ) continue
+
+                filteredResults.add(destination)
+            }
+
+            results.values = filteredResults
+            return results
+        }
+
+        @SuppressLint("NotifyDataSetChanged")
+        override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
+            if (destinationAdapter.destinationsBackup.isEmpty()) destinationAdapter.destinationsBackup.addAll(destinations)
+
+            destinations.clear()
+
+            p1?.values.let {
+                destinations.addAll(it as ArrayList<Destination>)
+            }
+
+            destinationAdapter.notifyDataSetChanged()
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DestinationHolder {
@@ -98,4 +148,9 @@ class DestinationAdapter(private val context: Context, private val destinations:
     override fun getItemCount(): Int {
         return destinations.size
     }
+
+    override fun getFilter(): Filter {
+        return FilterDestinations(this, destinations as ArrayList<Destination>)
+    }
 }
+

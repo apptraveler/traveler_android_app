@@ -8,7 +8,7 @@
     tools:context=".ui.activities.HomeActivity">
 
     <TextView
-        android:id="@+id/destinyWelcome"
+        android:id="@+id/destinationWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -19,10 +19,10 @@
         android:textSize="24sp" />
 
     <SearchView
-        android:id="@+id/search"
+        android:id="@+id/searchDestinations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/destinyWelcome"
+        android:layout_below="@id/destinationWelcome"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/beveled_container"
@@ -31,10 +31,10 @@
         android:windowSoftInputMode="stateHidden" />
 
     <TextView
-        android:id="@+id/destinyTitle"
+        android:id="@+id/destinationTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/search"
+        android:layout_below="@id/searchDestinations"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/montserrat_light"
         android:text="@string/destinies_title"
@@ -45,7 +45,7 @@
         android:id="@+id/destinations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/destinyTitle"
+        android:layout_below="@+id/destinationTitle"
         android:overScrollMode="never"
         tools:listitem="@layout/destination_item" />
 
