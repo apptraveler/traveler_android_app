@@ -2,16 +2,17 @@ package br.com.traveler.ui.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
+import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import br.com.traveler.R
 import br.com.traveler.models.Destination
+import br.com.traveler.ui.activities.DestinationProfile
 import br.com.traveler.utils.enumerators.WeatherEnumerator
 import coil.load
 import coil.transform.RoundedCornersTransformation
@@ -22,7 +23,7 @@ class DestinationAdapter(private val context: Context, private val destinations:
 
     val destinationsBackup = ArrayList<Destination>()
 
-    class DestinationHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class DestinationHolder(private val view: View, private val context: Context) : RecyclerView.ViewHolder(view) {
         fun bind(destination: Destination) {
             val destinationImageView = view.findViewById<ImageView>(R.id.destination_image)
             destinationImageView.load(destination.photo) {
@@ -38,6 +39,16 @@ class DestinationAdapter(private val context: Context, private val destinations:
             setWeatherIcon(destination.weather.id)
             setTourismMeter(destination.tourismLevel)
             setExpenseLevel(destination.expenseLevel)
+
+            val cardDestination = view.findViewById<RelativeLayout>(R.id.cardDestination)
+            cardDestination.setOnClickListener { goToProfile(destination.id, destination.tourismLevel) }
+        }
+
+        private fun goToProfile(destinationId: Int, tourismLevel: Int) {
+            val intent = Intent(context, DestinationProfile::class.java)
+            intent.putExtra("destinationId", destinationId)
+            intent.putExtra("tourismLevel", tourismLevel)
+            context.startActivity(intent)
         }
 
         private fun setWeatherIcon(weatherId: Int) {
@@ -138,7 +149,7 @@ class DestinationAdapter(private val context: Context, private val destinations:
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DestinationHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.destination_item, parent, false)
-        return DestinationHolder(view)
+        return DestinationHolder(view, context)
     }
 
     override fun onBindViewHolder(holder: DestinationHolder, position: Int) {

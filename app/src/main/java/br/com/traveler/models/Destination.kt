@@ -1,6 +1,7 @@
 package br.com.traveler.models
 
 data class Destination(
+    val id: Int,
     val photo: String,
     val destination: String,
     val country: String,
