@@ -11,10 +11,50 @@
     <string name="login_welcome_message">Bem vindo ao Traveler</string>
     <string name="destination_tags">História, Museus, Arquitetura</string>
     <string name="destination">Paris, França</string>
-    <string name="destination_template">%s, %s</string>
     <string name="welcome_traveler">Olá viajante,\nqual destino você deseja visitar</string>
     <string name="destinies_title">Destinos</string>
     <string name="text_forgot_password">Esqueci minha senha</string>
     <string name="forgot_password_description">Esqueceu sua senha? Não se preocupe viajante! Te ajudaremos nesse formulário, apenas informe seu e-mail e te ajudaremos com isso.</string>
     <string name="recuperar_senha">Recuperar senha</string>
+
+    <!--  Titles and Labels  -->
+    <string name="about_title">SOBRE</string>
+    <string name="about_example">Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg Saint-Honoré.</string>
+    <string name="weather_title">CLIMA</string>
+    <string name="max_temperature_title">MAX</string>
+    <string name="min_temperature_title">MIN</string>
+    <string name="places_of_interest_title">LOCAIS DE INTERESSE</string>
+    <string name="seven_days">7 DIAS</string>
+    <string name="fifteen_days">15 DIAS</string>
+    <string name="five_days">5 DIAS</string>
+    <string name="average_cost_title">MÉDIA DE CUSTO</string>
+    <string name="tourism_title">TURISMO</string>
+    <!--  Titles and Labels  -->
+
+    <!--  Accessibility  -->
+    <string name="accessibility_text_favorite_button">Botão de Favoritar</string>
+    <string name="accessibility_text_destiny_image">Imagem do destino</string>
+    <string name="accessibility_text_share_button">Botão de compartilhar</string>
+    <!--  Accessibility  -->
+
+    <!--  Examples  -->
+    <string name="weather_example">Ensolarado</string>
+    <string name="min_temperature_example">22°C</string>
+    <string name="max_temperature_example">25°C</string>
+    <string name="profile_destination_example">França</string>
+    <string name="profile_country_example">Paris</string>
+    <string name="place_of_interest_name_example">Torre Eiffel</string>
+    <string name="place_of_interest_address_example">Champ de Mars, 5 Av. Anatole France, 75007 Paris, França</string>
+    <string name="five_days_cost_example">R$ 2.648,89</string>
+    <string name="seven_days_cost_example">R$ 7.264,18</string>
+    <string name="fifteen_days_cost_example">R$ 14.987,48</string>
+    <!--  Examples  -->
+
+    <!--  Resources Template -->
+    <string name="place_of_interest_address_template">%s, %s</string>
+    <string name="destination_template">%s, %s</string>
+    <string name="temperature_celsius_template">%s°C</string>
+    <!--  Resources Template -->
+
+
 </resources>

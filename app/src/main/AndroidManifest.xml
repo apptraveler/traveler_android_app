@@ -12,23 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Traveler">
         <activity
+            android:name=".ui.activities.DestinationProfile"
+            android:exported="true" />
+        <activity
             android:name=".ui.activities.HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.activities.ForgotPasswordActivity"
-            android:exported="true"
-            android:parentActivityName=".ui.activities.MainActivity"/>
-        <activity
-            android:name=".ui.activities.LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.ForgotPasswordActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.activities.MainActivity" />
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
