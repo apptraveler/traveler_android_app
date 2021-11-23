@@ -4,16 +4,21 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitInitializer {
-    private val retrofit = Retrofit.Builder()
+    private val retrofitMocky = Retrofit.Builder()
         .baseUrl("https://run.mocky.io/v3/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
+    private val retrofitFluo = Retrofit.Builder()
+        .baseUrl("https://api.fluo.work/v1/")
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
     fun getAuthorizationService(): AuthorizationService {
-        return retrofit.create(AuthorizationService::class.java)
+        return retrofitFluo.create(AuthorizationService::class.java)
     }
 
     fun getDestinationsService(): DestinationsService {
-        return retrofit.create(DestinationsService::class.java)
+        return retrofitMocky.create(DestinationsService::class.java)
     }
 }

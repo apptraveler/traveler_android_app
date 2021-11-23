@@ -54,6 +54,7 @@
     <string name="place_of_interest_address_template">%s, %s</string>
     <string name="destination_template">%s, %s</string>
     <string name="temperature_celsius_template">%s°C</string>
+    <string name="hint_name">Nome</string>
     <!--  Resources Template -->
 
 

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.MainActivity"
-    android:background="@color/custom_color_background">
+    android:background="@color/custom_color_background"
+    tools:context=".ui.activities.MainActivity">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboardingViewPager"
@@ -32,7 +32,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:text="@string/skip_text"
-        android:textColor="@color/custom_color_text_primary"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -66,21 +66,22 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonGetStarted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/custom_color_text_primary" />
+        app:tint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/custom_color_primary"
+        android:fontFamily="@font/montserrat_regular"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:text="@string/get_started_button"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:textColor="@color/custom_color_text_primary"
-        android:backgroundTint="@color/custom_color_primary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
