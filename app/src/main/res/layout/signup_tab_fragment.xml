@@ -50,6 +50,7 @@
         android:background="@drawable/edit_text_bg"
         android:fontFamily="@font/montserrat_regular"
         android:hint="@string/hint_password"
+        android:inputType="textPassword"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"

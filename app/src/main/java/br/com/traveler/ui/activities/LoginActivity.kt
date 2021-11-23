@@ -20,9 +20,10 @@ class LoginActivity : AppCompatActivity() {
         val viewPager = findViewById<ViewPager>(R.id.view_pager)
 
         with(tabLayout) {
-            addTab(newTab().setText("Login"))
-            addTab(newTab().setText("Signup"))
+            addTab(newTab().setText("Entrar"))
+            addTab(newTab().setText("Cadastro"))
             tabGravity = TabLayout.GRAVITY_FILL
+            addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(viewPager))
         }
 
         val adapter = LoginAdapter(supportFragmentManager, this, tabLayout.tabCount)

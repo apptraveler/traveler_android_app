@@ -25,7 +25,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:fontFamily="@font/montserrat_light"
+        android:fontFamily="@font/montserrat_regular"
         android:id="@+id/textDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
