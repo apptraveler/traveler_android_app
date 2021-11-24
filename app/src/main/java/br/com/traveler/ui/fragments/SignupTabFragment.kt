@@ -31,7 +31,7 @@ class SignupTabFragment : Fragment() {
             val nameText = view.findViewById<TextView>(R.id.name)
             val passwordText = view.findViewById<TextView>(R.id.password)
 
-            signUp(emailText.text.toString(), passwordText.text.toString(), nameText.text.toString())
+            signUp(nameText.text.toString(), emailText.text.toString(), passwordText.text.toString())
         }
 
         return view
